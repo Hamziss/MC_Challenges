@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&family=PT+Mono&display=swap');
+*,body{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+}
+body {     
+    min-height: 100vh;
+    display: block;
+   
+}
+.herocontainer{
+    width: 93vw;
+    height: 89vh;    
+    position: relative;
+}
+.maincontainer {    
+    width: 93vw;
+    height: 89vh;   
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.flexcontainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    top: 40%;    
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    align-items: center;
+}
+.first {
+    width: 548px;
+    height: 419px;
+}
+img {
+    width: 100%;   
+    height: 100%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.sec{
+    width: 41vw;    
+    height: 30vh;
+}
+h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: clamp(18px,2.5vw,80px);
+    font-weight: 700;  
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.hero {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: clamp(40px,3.9vw,100px);
+    font-weight: 600;
+}
+p {font-family: 'PT Mono', monospace;   
+    max-width: 399px;
+    margin-top: 20px;
+    font-size: clamp(20px,1.3vw,31px);}
+.btn {
+    width: 50px;
+    color: #ffffff;
+    width: 203px;
+    height: 48px;  
+    font-family: 'Chakra Petch', sans-serif;font-weight: 600;
+    background: #333333;
+    cursor: pointer;
+    margin-top: 30px;   
+}
+/*Media queries*/
+@media (max-width: 1050px){
+.sec {width: 300px;}
+.first {    width: 412px;   
+    height: 318px;
+}
+.flexcontainer{    margin-top: 91px;justify-content: space-around}
+}
+@media (max-width:768px){
+    .sec {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        width: 443px;height: auto;margin-bottom: 20px;
+    }
+    h1{position: absolute;
+    right: 50%;
+    transform: translate(50%, 0);}
+    .hero{
+        text-align: center
+    }
+    p {width: unset;text-align: center}
+    .first {
+        width: 414px;
+        height: 250px;
+        margin-top: 42vh;
+    }    
+}
+@media (max-width:400px){
+    .first{height:212px;margin-top: 309px}
+}
