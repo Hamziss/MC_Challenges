@@ -19,7 +19,6 @@ body {
     width: 93vw;
     height: 89vh;   
 }
-
 .container {
     display: flex;
     flex-direction: column;
@@ -78,12 +77,13 @@ p {font-family: 'PT Mono', monospace;
 }
 /*Media queries*/
 @media (max-width: 1050px){
-.sec {width: 300px;}
-.first {    width: 412px;   
-    height: 318px;
-}
-.flexcontainer{    margin-top: 91px;justify-content: space-around}
-}
+    .sec {width: 300px}
+    .first {
+        width: 412px;   
+        height: 318px;
+    }
+    .flexcontainer{top:143px;margin-top: 91px;justify-content: space-around}
+    }
 @media (max-width:768px){
     .sec {
         display: flex;
